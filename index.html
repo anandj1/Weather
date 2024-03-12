@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    </head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tabs_con" >
+            <div class="left_tab currentTab tab" your_weather>Your Weather</div>
+            <div class="right_tab tab" search_weather>Search Weather</div>
+
+        </div>
+        <div class="main_str">
+            <!-- For granting location -->
+            <div class="grant_location more_class"> 
+                <img src="./Images/location.png" alt="" loading="lazy" width="80" height="80">
+                <p>Please Grant Location</p>
+                <p>Allow Access To get Information about your weather</p>
+                <button class="btn a" data_access>Grant Acess </button>
+
+            </div>
+
+            <!-- Search form (input tag and search tag) -->
+
+            <form action="" class="form_cont" data_form>
+                <input type="text" placeholder="Search for a city.." data_search>
+                <button id="button_b"  class="btn b" type="submit">
+                    <img src="./Images/search.png" alt="" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+
+
+            <!-- Loading screen -->
+            
+
+            <div class="loading_screen more_class "> 
+                <img src="./Images/loading.gif" alt="" loading="lazy" width="150" height="150">
+                <p>Loading</p>
+                
+              
+            </div>
+
+            <!--  Show weathe rpage dynamaic  -->
+            <div class="user_info more_class">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img country_icon>
+                    
+                </div>
+
+                <!-- Weather description -->
+                <div class="weather_desc">
+                <p weather_desc></p>
+                <img weather_img>
+                <p data-temp></p>
+            </div>
+
+                <!-- three divs in flex-row -->
+                <div class="parameters">
+                <div class="parameter">
+                    <img src="./Images/wind.png" alt="" loading="lazy">
+                    <p>Windspeed</p>
+                    <p data-windspeed></p>
+
+                </div>
+
+                <!-- div-2 -->
+
+                <div class="parameter">
+                    <img src="./Images/humidity.png" alt="">
+                    <p>Humidity</p>
+                    <p data-humidity></p>
+                </div>
+
+                <!-- div-2 -->
+                <div class="parameter">
+                    <img src="./Images/cloud.png" alt="">
+                    <p>Clouds</p>
+                    <p data-cloud></p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <script src="indexx.js"></script>
+</body>
+</html>

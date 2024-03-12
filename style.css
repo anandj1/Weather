@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0.967);
+
+
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 50%, rgba(76, 168, 175, 0.95) 28%, rgba(75, 86, 183, 1) 100%);
+    overflow-x: hidden;
+    
+    
+
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 35px;
+    
+}
+.tabs_con{
+    display: flex;
+    justify-content: space-between;
+    max-width:650px ;
+    margin:0 auto;
+    margin-top: 3rem;
+    
+}
+.tab{
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1.1px;
+    padding: 5px 8px;
+}
+.tab.currentTab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.btn{
+    /* this will reset the default property of button and set as per i want */
+    all: unset;                      
+    background-color:rgb(27, 154, 239);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: white;
+    transition: all 0.5s;
+
+
+}
+.a:hover{
+    background-color: rgb(24, 30, 222);
+    
+}
+.more_class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.grant_location{
+    display: none;
+    margin-top: 70px;
+
+}
+.grant_location.active{
+    display: flex;
+}
+.grant_location img{
+    padding-bottom: 2rem;
+}
+.grant_location p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.grant_location p:last-of-type{
+    font-size: 0.85rem;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+.main_str{
+    margin-top: 2rem;
+}
+.loading_screen{
+    display: none;
+
+}
+.loading_screen.active{
+    display: flex;
+}
+.loading_screen p{
+    text-transform: uppercase;
+}
+.user_info{
+    display: none;
+    
+
+}
+.user_info.active{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin: 1.5rem auto;
+   
+}
+.name img{
+    width: 32px;
+    height: 32px;
+}
+.name p{
+    font-size: 2.5rem;
+}
+.weather_desc{
+    text-align: center;
+}
+.weather_desc p{
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+.weather_desc img{
+    width: 90px;
+    height: 90px;
+}
+.weather_desc p[data-temp]{
+    font-size: 2.65rem;
+    font-weight: 700;
+
+}
+.parameters{
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    @media screen and (max-width:600px) {
+        display:flex;
+        flex-wrap: wrap;
+    
+    }
+
+  
+
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 10px;
+    align-items:  center;
+    margin-bottom: 1rem;
+
+    
+}
+.parameter img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight:600 ;
+    text-transform: uppercase;
+}
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+
+.form_cont{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+
+
+
+}
+.form_cont.active{
+    display: flex;
+}
+.form_cont input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 10px;
+   
+
+
+}
+.form_cont input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+.form_cont input:focus{
+    outline: 3px solid rgba(255,255,255,0.7);
+}
+#button_b{
+    all: unset;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: rgb(30, 147, 214);
+
+}
